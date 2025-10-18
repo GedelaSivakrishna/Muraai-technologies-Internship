@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket STOMP Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+</head>
+<body>
+  <h2>WebSocket Test</h2>
+  <button onclick="sendMove()">Send Move</button>
+  <pre id="messages"></pre>
+
+  <script>
+    const socket = new SockJS('/ws'); // matches your Spring endpoint
+    const stompClient = Stomp.over(socket);
+
+    stompClient.connect({}, function () {
+      console.log('Connected!');
+      stompClient.subscribe('/topic/moves', function (msg) {
+        document.getElementById('messages').innerText += msg.body + "\n";
+      });
+    });
+
+    function sendMove() {
+      stompClient.send("/app/move", {}, "e2 to e4");
+    }
+  </script>
+</body>
+</html>

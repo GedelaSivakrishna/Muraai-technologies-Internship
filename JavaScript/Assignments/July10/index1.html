@@ -1,0 +1,28 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List App</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        
+        <h1 id="main-h">Todo List App</h1>
+
+        <div id="taskInputContainer">
+            <div>
+                <textarea rows="1" cols="60" name="taskName" id="taskName"></textarea>
+                <p id="enterTaskErrorPara"></p>
+            </div>
+            <button id="addBtn">ADD</button>
+        </div>
+
+        <div id="tasksContainer">
+            <ol id="orderedTasksContainer"></ol>
+        </div>
+
+        <script src="https://unpkg.com/dompurify@3.0.6/dist/purify.min.js"></script>
+        <script src="q1.js"></script>
+    </body>
+    </html>

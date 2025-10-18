@@ -1,0 +1,21 @@
+
+* {
+    font-size: 1.25rem;
+}
+
+form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#nameError, #dobError {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}

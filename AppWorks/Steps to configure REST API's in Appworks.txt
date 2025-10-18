@@ -1,0 +1,9 @@
+1) Create the project
+2) Create new folder named Schemas
+ i) create request & response schema
+3) Create new folder named XML store
+ i)  configure config.xml & credentials.xml
+ ii) setup the httpconnector
+4) Create new folder named connectors & configure
+5) Create new folder named web services & define the web services
+ 

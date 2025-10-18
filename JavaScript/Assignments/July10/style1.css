@@ -1,0 +1,41 @@
+
+    #main-h {
+        text-align: center
+    }
+
+    #taskInputContainer {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    #addBtn {
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        height: 30px;
+    }
+
+    #enterTaskErrorPara {
+        margin:0;
+    }
+
+    #tasksContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        font-size: 1.35rem;
+    }
+
+    textarea {
+        font-size: 1.15rem;
+    }
+
+    .hover-effect {
+        cursor: pointer;
+    }

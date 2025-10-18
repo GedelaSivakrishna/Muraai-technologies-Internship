@@ -1,0 +1,15 @@
+1) A.Create an Angular app for CRUD on employees, ✅
+   B.implementing lazy loading for the employee module; ✅
+   C.Implement a service for state management to track user preferences (Light & Dark Mode), using         signals for reactivity; ✅
+
+2) Write a program to update a product via PUT, securing API calls with token simulation and error handling.
+
+4)A.Create a TaskListComponent to display tasks with filters for status (using signals), ✅
+  B.implementing lazy loading for the TasksModule; ✅
+  C.Implement a TaskEditComponent for adding/editing tasks with a reactive form, validating inputs and   using signals for state updates; ✅
+  D.Add a TaskReportComponent to show task statistics (e.g., count by status), loaded lazily in the       ReportsModule; ✅
+  E.Create a TaskService for state management, using signals to manage task data and filters, with       secure input sanitization; ✅
+  F.Implement routing for task list, edit, and report views, securing routes and handling API   errors     with mock data (JSONPlaceholder)
+
+3) Build a component to manage tasks via a mock API, handling errors and sanitizing API responses;
+4) Implement language translation feature.

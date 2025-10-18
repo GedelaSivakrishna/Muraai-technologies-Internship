@@ -1,0 +1,30 @@
+
+    * {
+        font-size: 1.15rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    #buttonsContainer {
+        display: flex;
+        column-gap: 10rem;
+    }
+
+    #imageContainer {
+        min-height: 260px;
+    }

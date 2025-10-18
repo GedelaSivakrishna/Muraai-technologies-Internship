@@ -1,0 +1,2 @@
+1) Confirm password doesn't match error message not showing
+2) The i/p fields after submitting & resetting, still showing red color border

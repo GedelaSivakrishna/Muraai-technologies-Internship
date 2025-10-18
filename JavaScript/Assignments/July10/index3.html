@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+
+        <form action="" onsubmit="validateInputs()">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <p id="nameError"></p>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <p id="emailError"></p>
+            </div>
+            <button id="btn">Submit</button>
+            <p id="successMsg"></p>
+        </form>
+        
+        <script src="https://unpkg.com/dompurify@3.0.6/dist/purify.min.js"></script>
+        <script src="q3.js"></script>
+    </body>
+    </html>

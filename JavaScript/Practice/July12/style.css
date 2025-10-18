@@ -1,0 +1,16 @@
+
+* {
+    font-size: 1.25rem;
+}
+
+#fpara {
+    background-color: yellow;
+    color: black;
+    padding: 1rem;
+}
+
+#spara {
+    background-color: blue;
+    color: white;
+    padding: 2rem;
+}

@@ -1,0 +1,5 @@
+                              Rules to write SQL query in Appworks
+1) Normally write the SQL query
+2) Surround the table/column names with \"<name>\"
+3) Replace the literal values or hard coded values which are used in comparision or evaluation with parameters.
+4) Add the query parameters to the QueryObject 
