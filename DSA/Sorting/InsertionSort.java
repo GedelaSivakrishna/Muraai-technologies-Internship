@@ -10,7 +10,7 @@ public class InsertionSort {
             int j;
             for(j = i - 1; j >= 0; j--) {
                 if(nums[j] > element) {
-                    nums[j + 1] = nums[j]; // push the greater element to the right
+                    nums[j + 1] = nums[j]; // push the greater element to the right, this step is shifting not swapping
                     continue;
                 }
                 break;
@@ -32,4 +32,15 @@ public class InsertionSort {
         insertionSort(nums);
         print(nums);
     }
+
+    /* Notes
+     1. The first element is always sorted. We pick each element from index [1, n - 1] and place them
+        in the correct position of sorted part.
+     2. We do no swaps in this algorithm.
+     3. Still the time complexity is same as bubble & selection sort but the advantage comes here is no swaps.
+     4. The worst case occurs when all the elements are in either ascending / descending order and we try to
+        arrange in opposite way.
+     5. It is an inplace algorithm and stable {doesn't change the relative ordering of the elements}.
+     6. In Best case, it takes Ω(n) time.
+    */
 }
