@@ -1,4 +1,4 @@
-package Practice;
+package Leetcode_Practice;
 import java.util.Arrays;
 
 public class SpellsAndPotions {

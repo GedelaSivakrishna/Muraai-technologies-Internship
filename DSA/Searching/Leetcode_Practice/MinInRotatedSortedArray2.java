@@ -1,4 +1,4 @@
-package Practice;
+package Leetcode_Practice;
 
 public class MinInRotatedSortedArray2 {
 

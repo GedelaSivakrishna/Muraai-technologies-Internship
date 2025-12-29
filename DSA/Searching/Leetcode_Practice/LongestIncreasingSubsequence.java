@@ -1,4 +1,4 @@
-package Practice;
+package Leetcode_Practice;
 import java.util.ArrayList;
 public class LongestIncreasingSubsequence {
 
