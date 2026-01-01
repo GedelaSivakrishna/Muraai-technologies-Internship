@@ -16,12 +16,12 @@ public class MergeSort {
         }
 
         // remaining elements in 1st array
-        while(i < mid) {
+        while(i <= mid) {
             temp[k++] = nums[i++];
         }
 
         // remaining elements in 2nd array
-        while(j < hi) {
+        while(j <= hi) {
             temp[k++] = nums[j++];
         }
 
@@ -33,6 +33,7 @@ public class MergeSort {
     }
 
     public static void mergeSort(int nums[], int lo, int hi) {
+        // handle empty / single length arrays
         if(lo >= hi) {
             return;
         }
@@ -50,7 +51,8 @@ public class MergeSort {
     }
     
     public static void main(String[] args) {
-        int nums[] = {5, 2, 12, 1, 4, 17, -1, 10};
+        int nums[] = {5, 2, 12, 1, 4, 17, -1, 10, 11};
+        // ans -1 1 2 4 5 10 12 17
         mergeSort(nums, 0, nums.length - 1);
         print(nums);
     }
