@@ -1,0 +1,57 @@
+
+if(0) {
+    console.log("0 is truthy value");
+} else {
+    console.log("0 is falsy value");
+}
+
+if(NaN) {
+    console.log("NaN is truthy value");
+} else {
+    console.log("NaN is falsy value");
+}
+
+if(null) {
+    console.log("null is truthy value");
+} else {
+    console.log("null is falsy value");
+}
+
+if(undefined) {
+    console.log("undefined is truthy value");
+} else {
+    console.log("undefined is falsy value");
+}
+
+if(-0) {
+    console.log("-0 is truthy value");
+} else {
+    console.log("-0 is falsy value");
+}
+
+if(0n) {
+    console.log("0n is truthy value");
+} else {
+    console.log("0n is falsy value");
+}
+
+if("") {
+    console.log("\"\" is truthy value");
+} else {
+    console.log("\"\" is falsy value");
+}
+
+if('') {
+    console.log("\'\' is truthy value");
+} else {
+    console.log("\'\' is falsy value");
+}
+
+if(``) {
+    console.log("\`\` is truthy value");
+} else {
+    console.log("\`\` is falsy value");
+}
+
+console.log("-------------------")
+console.log("All other values are truthy values");
