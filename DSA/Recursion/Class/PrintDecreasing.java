@@ -1,3 +1,4 @@
+package Class;
 public class PrintDecreasing {
 
     // Print numbers in decreasing sequence without using loops

@@ -1,3 +1,4 @@
+package Class;
 public class NthFibonacci {
 
     /*  Fibonacci series

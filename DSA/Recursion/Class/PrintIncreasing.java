@@ -1,3 +1,4 @@
+package Class;
 public class PrintIncreasing {
 
     // Print increasing sequence without using loops

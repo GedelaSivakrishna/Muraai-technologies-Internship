@@ -1,3 +1,4 @@
+package Class;
 public class LinearSearch {
 
     /*  Time  - O(n)

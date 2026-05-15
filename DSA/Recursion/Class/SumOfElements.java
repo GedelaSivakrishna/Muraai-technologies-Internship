@@ -1,3 +1,4 @@
+package Class;
 public class SumOfElements {
 
     /*  Time  - O(n)

@@ -1,3 +1,4 @@
+package Class;
 public class HouseRobber {
 
     /*  Time  - O(n^3)

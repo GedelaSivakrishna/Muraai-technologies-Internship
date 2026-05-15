@@ -1,3 +1,4 @@
+package Class;
 public class CountBinaryStringsWithoutConsecutive1s {
 
     public static int countBinaryStringsWithoutConsecutive1s(int n) {

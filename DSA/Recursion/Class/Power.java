@@ -1,3 +1,4 @@
+package Class;
 public class Power {
 
     /*  Time  - O(exp)
@@ -42,9 +43,27 @@ public class Power {
             return half * half * base;
         }
     }
+
+    public static double iterativePower(double x, int n) {
+        int temp = 2;
+        // int n = 5; // 2 ^ 5
+        double result = x;
+
+        while(temp <= n / 2) {
+            result = result * result;
+            temp *= 2;
+        }
+
+        if(n % 2 == 0) {
+            return result * result;
+        } else {
+            return result * result * x;
+        }
+    }
     
     public static void main(String[] args) {
         // System.out.println(powerLoopApproach(7, 5));
-        System.out.println(power(7, 5));
+        // System.out.println(power(7, 5));
+        // iterativePower();
     }
 }
