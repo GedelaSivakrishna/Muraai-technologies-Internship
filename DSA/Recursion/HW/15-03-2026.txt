@@ -1,0 +1,2 @@
+1. Solve count grid ways recursively by writing seperate recurence relation.
+2. Solve rat in maze
