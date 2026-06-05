@@ -185,3 +185,26 @@ air_quality_renamed = air_quality.rename(
 # Count number of records by category
 # total number of people in each class
 # print(titanic["Pclass"].value_counts())
+
+# Reshape the layout of tables
+# reshape means - we can change the structure of the table
+# sort table rows based on a column value
+sorted_by_age = titanic.sort_values(by="Age")
+# print(sorted_by_age.head())
+
+# sort titanic rows based on 'Pclass' and 'Age' in descending order
+# print(titanic.sort_values(["Pclass", "Age"], ascending=False).head())
+
+# read the new air quality data
+air_quality = pd.read_csv("data/air_quality_long.csv")
+# print(air_quality.head())
+
+no2 = air_quality[air_quality["parameter"] == "no2"]
+# print(no2.head())
+
+# two records from each location, sorted by index
+no2_subset = no2.sort_index().groupby(["location"]).head(2)
+# print(no2_subset)
+
+# values of the three columns as seperate columns
+# print(no2_subset.pivot(columns="location", values="value"))
