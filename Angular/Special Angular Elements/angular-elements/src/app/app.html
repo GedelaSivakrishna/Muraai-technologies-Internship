@@ -1,0 +1,52 @@
+                                  <!-- ng-container - acts like a placeholder -->
+<!-- <div *ngIf="show"> -->
+  <!-- <p *ngIf="show">This is a para</p> -->
+<!-- </div> -->
+
+<!-- <ng-container *ngIf="show">
+  <p>This is a para</p>
+</ng-container> -->
+<!-- <div  *ngIf="show">
+  <li *ngFor="let item of items" >This is a list item</li>
+</div> -->
+
+                                  <!-- ng-template - we can define when & where template needs to be rendered -->
+<!-- <h1 *ngIf="show;  else myTemplate" >This is a heading</h1> -->
+
+<!-- ng-template's won't be rendered soon after defining, we have to tell angular when & where
+ to render it. -->
+<!-- <ng-template #myTemplate >
+  <h3>This is h3 heading</h3>
+  <p>This is a paragraph</p>
+</ng-template>
+
+<p *ngIf="show;  else myTemplate" >This is a Para</p>
+
+<div *ngTemplateOutlet="myTemplate" ></div> -->
+
+                                <!-- ng-content - helps in content projection from parent to child -->
+<!-- <app-child>
+  <h3 class="heading">I am heading 1</h3>
+  <p class="para">I am para 1</p>
+</app-child>
+
+<app-child>
+    <h3 class="heading">I am heading 2</h3>
+    <p class="para">I am para 2</p>
+</app-child>
+
+<app-child>
+    <h3 class="heading">I am heading 3</h3>
+    <p class="para">I am para 2</p>
+</app-child> -->
+
+                                <!-- ng-switch -->
+<div [ngSwitch]="day">
+  <p *ngSwitchCase="1" >Monday</p>
+  <p *ngSwitchCase="2" >Tuesday</p>
+  <p *ngSwitchCase="3" >Wednesday</p>
+  <p *ngSwitchCase="4" >Thursday</p>
+  <p *ngSwitchCase="5" >Friday</p>
+  <p *ngSwitchCase="6" >Saturday</p>
+  <p *ngSwitchCase="7" >Sunday</p>
+</div>
