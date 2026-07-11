@@ -2,27 +2,33 @@ package Class;
 
 public class HouseRobber2 {
 
-    public static int f(int houses[]) {
-        int n = houses.length;
-        if (n == 1) return houses[0];
+    /*  Time  - O(n)
+        Space - O(1)
+    */
+    public static int f(int nums[], int si, int li) {
+        int prev2 = nums[si];
+        int prev1 = Math.max(nums[si], nums[si + 1]);
 
-        int next2 = houses[n - 1];
-        int next1 = Math.max(houses[n - 2], houses[n - 1]);
-
-        for(int i = n - 3; i >= 0; i--) {
-            int curr = Math.max(houses[i] + next2, next1);
-            next2 = next1;
-            next1 = curr;
+        for(int i = si + 2; i <= li; i++) {
+            int curr = Math.max(nums[i] + prev2, prev1);
+            prev2 = prev1;
+            prev1 = curr;
         }
 
-        next1 = n % 2 == 0 ? next1 : next1 - Math.min(houses[0], houses[n - 1]);
-        return Math.max(next1, next2);
+        return prev1;
+    }
+
+    public static int rob(int[] nums) {
+        int n = nums.length;
+        if (n == 1) return nums[0];
+        if (n == 2) return Math.max(nums[0], nums[1]); 
+        return Math.max(f(nums, 0, n - 2), f(nums, 1, n - 1));
     }
 
     public static void main(String[] args) {
         int nums[] = {2,3,2};
         int nums2[] = {1,2,3,1};
-        System.out.println(f(nums)); // 3
-        System.out.println(f(nums2)); // 4
+        System.out.println(rob(nums)); // 3
+        System.out.println(rob(nums2)); // 4
     }
 }
