@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/Muraai-technologies-Internship"
+		}
+	],
+	"settings": {
+		"github.copilot.enable": {
+			"*": false
+		},
+		"editor.inlineSuggest.enabled": false
+	}
+}
