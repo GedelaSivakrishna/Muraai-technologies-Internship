@@ -1,0 +1,2 @@
+I am sivakrishna, learning python file i/o operations
+ This sentence gets appended to the end of existing file content
