@@ -1,0 +1,28 @@
+1. What is an API ?
+Ans: API (Application programming interface) is a way through which two softwares communicate with each other.
+It defines in what input format the software1 should request and output format the software2 will send.
+
+2. What is module, package, library and framework ?
+Ans: Module    - a single code file
+     package   - collection of related modules and subpackages
+     library   - collection of code that provides a specific functionality which can be reused.
+                 We call the library wherever needed while developing apps.
+                 Exp- Numpy  - library that helps in mathmatical calculations
+                      Pandas - library to manipulate, analyse and clean data
+     framework - framework provides structure for developing the application. Framework calls the
+                 code and handles applications execution flow.
+                 Exp- Angular, Ruby on rails, Swing (Java framework for desktop apps)
+
+3. What are REST API's ?
+Ans: The API's which follow the rules defined by REST are known as REST API's. Below are some rules
+i.   REST prefers client - server communication over http protocol.
+ii.  It prefers the data transfers between client - server to be in JSON format.
+iii. The response should have status code.
+iv.  The data from client to server can be sent through request body, url params, query params.
+
+4. What are the other types of API's ?
+Ans: Soap, GraphQL, gRPC. These prefer other types of rules. 
+
+5. What are the benfits of API versioning ?
+Ans: i. Helps in supporting backward compatability.
+    ii. If any issues found in newer versions, we can switch back to older versions.
