@@ -1,4 +1,4 @@
-package Class;
+
 import java.util.Scanner;
 public class CVacation {
 
