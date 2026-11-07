@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    color: green;
+}
+
+.btn {
+    color: red !important;
+}
+
+button {
+    color: blue !important;
+}
