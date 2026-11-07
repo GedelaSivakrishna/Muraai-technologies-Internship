@@ -26,3 +26,6 @@ Ans: Soap, GraphQL, gRPC. These prefer other types of rules.
 5. What are the benfits of API versioning ?
 Ans: i. Helps in supporting backward compatability.
     ii. If any issues found in newer versions, we can switch back to older versions.
+
+#FastAPI
+FastAPI is a python framework, helps in building backend server.
